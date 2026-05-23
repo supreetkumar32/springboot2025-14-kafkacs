@@ -8,3 +8,5 @@ if we hit the url http://localhost:9050/users/hello through postman ,we get the 
 now , 1000 messages are sent
 hit the url
 messages are printed in the terminal of spring boot(messages are distributed among 3 listeners in the UserKafkaConsumer class)
+
+we have used key(1%2) in this, so partitioning logic will partition it into 2 after hitting the url (500 and 500 acc to key) and one is 0.
